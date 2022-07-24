@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 05</title>
+</head>
+<body>
+    <p>5) Faça um Programa que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno.
+         Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.</p>
+    <p>Aluno: Pedro Julius.</p>
+
+    <script>
+        var getLetter = prompt("Digite a letra conforme o seu turno de estudo. M (Matutino), V (Vespertino) ou N (Noturno): ");
+
+        if (getLetter == "M" || getLetter == "m" ) {
+            alert("Bom dia!")
+        }
+        else if (getLetter == "V" || getLetter == "v") {
+            alert("Boa tarde!")
+        }
+        else if (getLetter == "N" || getLetter == "n") {
+            alert("Boa noite!")
+        }
+        else {
+            alert("Valor inválido!")
+        }
+        
+
+    </script>
+</body>
+</html>
