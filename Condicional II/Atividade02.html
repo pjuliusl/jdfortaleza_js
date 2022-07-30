@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 07</title>
+</head>
+<body>
+    <p>
+        2) Faça um Programa que peça a hora e apresente uma mensagem de 
+        "Bom dia", "Boa tarde" ou "Boa noite" conforme a hora informada.
+    </p>
+    <p>Aluno: Pedro Julius.</p>
+
+    <script>
+        var getHour = parseInt(prompt("Digite alguma hora do dia no intervalo de 00 a 23h: "));
+
+        if (getHour > 0 && getHour <= 4) {
+            document.write("Boa noite!")
+        }
+        else if(getHour > 4 && getHour <= 12) {
+            document.write("Bom dia!")
+        }
+        else if(getHour > 12 && getHour <= 18) {
+            document.write("Boa tarde!")
+        }
+        else {
+            document.write("Boa noite!")
+        }
+
+    </script>
+</body>
+</html>

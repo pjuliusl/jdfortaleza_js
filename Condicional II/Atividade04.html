@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 07</title>
+</head>
+<body>
+    <p>4) As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores
+         e lhe contraram para desenvolver o programa que calculará os reajustes. 
+         Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, 
+         baseado no salário atual:
+        * salários até R$ 280,00 (incluindo) : aumento de 20%
+        * salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+        * salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+     salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
+     
+        - o salário antes do reajuste;
+        - o percentual de aumento aplicado;
+        - o valor do aumento;
+        - o novo salário, após o aumento.</p>
+    <p>Aluno: Pedro Julius.</p>
+
+    <script>
+        var getOldSalary = parseFloat(prompt("Digite o valor do salário antes do reajuste: "));
+        var Increase20 = getOldSalary + (getOldSalary * 0.2)
+        var Increase15 = getOldSalary + (getOldSalary * 0.15)
+        var Increase10 = getOldSalary + (getOldSalary * 0.1)
+        var Increase5 = getOldSalary + (getOldSalary * 0.05)
+        var HowMuchIncreased20 = (getOldSalary * 0.2)
+        var HowMuchIncreased15 = (getOldSalary * 0.15)
+        var HowMuchIncreased10 = (getOldSalary * 0.1)
+        var HowMuchIncreased5 = (getOldSalary * 0.05)
+
+        if (getOldSalary <= 280) {
+            alert("O seu antigo salário é " + getOldSalary +
+             ", o percentual de aumento aplicado no seu salário foi de 20%." + 
+             "A quantidade exata do aumento do seu salário é: " + HowMuchIncreased20 + 
+             " O seu novo salário é: " + Increase20 + ".");
+        }
+        else if (getOldSalary > 280 && getOldSalary <= 700) {
+            alert("O seu antigo salário é " + getOldSalary +
+             ", o percentual de aumento aplicado no seu salário foi de 15%." + 
+             "A quantidade exata do aumento do seu salário é: " + HowMuchIncreased15 + 
+             " O seu novo salário é: " + Increase15 + ".");
+        }
+        else if (getOldSalary > 700 && getOldSalary <= 1500) {
+            alert("O seu antigo salário é " + getOldSalary +
+             ", o percentual de aumento aplicado no seu salário foi de 10%." + 
+             "A quantidade exata do aumento do seu salário é: " + HowMuchIncreased10 + 
+             " O seu novo salário é: " + Increase10 + ".");
+        }
+        else if (getOldSalary > 1500) {
+            alert("O seu antigo salário é " + getOldSalary +
+             ", o percentual de aumento aplicado no seu salário foi de 5%." + 
+             "A quantidade exata do aumento do seu salário é: " + HowMuchIncreased5 + 
+             " O seu novo salário é: " + Increase5 + ".");
+        }
+        else {
+            alert("Você não digitou o salário.")
+        }
+    </script>
+</body>
+</html>
