@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <p>3) Faça um programa que peça uma nota, entre zero e dez. 
+        Mostre uma mensagem caso o valor seja inválido 
+        e continue pedindo até que o usuário informe um valor válido.</p>
+    <p>Aluno: Pedro Julius.</p>
+
+    <script>
+        var pegaNota = prompt("Digite uma nota entre 0 e 10: ");
+        if (pegaNota >=0 && pegaNota <= 10) {
+            document.write("Tudo certo.")
+        }
+        while (pegaNota > 10) {
+            pegaNota = prompt("Nota inválida. Tente novamente!")
+
+            if (pegaNota >=0 && pegaNota <= 10) {
+            document.write("Tudo certo.")
+            break
+            }
+
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+</head>
+<body>
+    <p>1) Faça um programa que peça 10 números inteiros, 
+        calcule e mostre a quantidade de números pares e 
+        a quantidade de números impares.</p>
+    <p>Aluno: Pedro Julius.</p>
+
+    <script>
+        n = 1
+        P = 0
+        I = 0
+        while (n <= 10){
+            a = parseInt(prompt("Digite 10 números para saber a quantidade ímpares e pares."))
+            n = n + 1
+            if ((a % 2) == 0){
+                P = P + 1
+            }
+            else
+                I = I + 1
+        }
+        alert("Existem " + P + " números pares.")
+        alert("Existem " + I + " números ímpares.")
+        
+    </script>
+</body>
+</html>

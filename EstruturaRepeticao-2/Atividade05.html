@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <p>3) Faça um programa que peça uma nota, entre zero e dez. 
+        Mostre uma mensagem caso o valor seja inválido 
+        e continue pedindo até que o usuário informe um valor válido.</p>
+    <p>Aluno: Pedro Julius.</p>
+
+    <script>
+        var getNumber = parseInt(prompt("Digite qual número deseja fatorar: "));
+        var resultValue=1;
+
+        for(var conta = 1 ; conta  <= getNumber ; conta ++)
+             resultValue *= conta ;
+
+
+        alert(resultValue);
+
+    </script>
+</body>
+</html>
